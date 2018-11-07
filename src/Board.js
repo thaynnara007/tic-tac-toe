@@ -4,15 +4,17 @@ import './Board.css';
 
 class Board extends React.Component{
     renderSquare(index){
-        return <Square />;
+        return <Square value={index} />;
     }
 
     render(){
        const status = "Next Player: X";
 
        return(
+
            <div>
-               <div className='status'>{status}</div>
+           <div className='status'>{status}</div>
+           <div className="alingn">
                <div className='board'>
                     <div className='board-row'>
                             {this.renderSquare(1)}
@@ -31,6 +33,7 @@ class Board extends React.Component{
                     </div>
                </div>
            </div>
+        </div>
        )
     }
 }

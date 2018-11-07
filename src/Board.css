@@ -1,5 +1,5 @@
 .board{
-    margin-left: 650px;
+   
 }
 .status{
     font-family: monospace;
@@ -10,5 +10,14 @@
     margin-bottom: 50px;
     margin-top: 60px;
     background: cornflowerblue;
+}
+
+.alingn{
+    width: 100vw;
+    height: 60vh; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center 
 }
 
