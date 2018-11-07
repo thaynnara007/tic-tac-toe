@@ -1,0 +1,8 @@
+.square{
+    background: rgb(1, 42, 71);
+    border: 1px solid snow;
+    width: 80px;
+    height: 80px;
+    margin-right: -2px;
+    padding: 0;
+}

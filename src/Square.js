@@ -1,9 +1,10 @@
 import React from 'react';
+import './Square.css';
 
 class Square extends React.Component{
     render(){
         return(
-            <button>
+            <button className='square'>
             </button>
         )
     }
