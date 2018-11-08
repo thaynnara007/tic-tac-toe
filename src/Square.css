@@ -1,15 +1,16 @@
 .square{
     float: left;
     background: rgb(1, 42, 71);
-    border: 1px solid snow;
+    border: 1px solid seashell;
     line-height: 34px;
     width: 120px;
     height: 120px;
     padding: 0;
     text-align: center; 
+    font-weight: bold;
 }
 
 button{
-    font-size: 40px;
+    font-size: 70px;
     color: darkgray
 }
