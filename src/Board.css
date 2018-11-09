@@ -1,21 +1,6 @@
-.board{
-   
-}
-.status{
-    font-family: monospace;
-    color: whitesmoke;
-    font-size: 30px;
-    text-align: center;
-    text-shadow: 3px 3px midnightblue;
-    margin-bottom: 50px;
-    margin-top: 60px;
-    background: cornflowerblue;
-}
 
 .alingn{
-    width: 100vw;
-    height: 60vh; 
-    display: flex;
+    display: flex; 
     flex-direction: row; 
     justify-content: center;
     align-items: center 

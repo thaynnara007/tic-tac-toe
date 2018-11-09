@@ -43,14 +43,28 @@ class Game extends React.Component{
         const current = history[this.state.stepNumber];
         const winner = calculeWinner(current.squares);   
         let status;
-        const moves = history.map((step, move) =>{
-            const desc = move ? 'go to move #' + move : 'go to game start';
+        const moves1 = history.map((step, move) =>{
+            if((move % 2 !== 0)){
 
-            return(
-                <li key={move}>
-                    <button onClick={() => this.jumpTo(move)}>{desc}</button>
-                </li>
-            )
+                const desc = move ? 'go to move #' + move : 'go to game start';
+
+                return(
+                    <li key={move}>
+                        <button className="font" onClick={() => this.jumpTo(move)}>{desc}</button>
+                    </li>
+                )
+            }else return null;
+        })
+        const moves2 = history.map((step, move) =>{
+            if((move % 2) === 0){
+                const desc = move ? 'go to move #' + move : 'go to game start';
+
+                return(
+                    <li key={move}>
+                        <button className="font" onClick={() => this.jumpTo(move)}>{desc}</button>
+                    </li>
+                )
+            }else return null;
         })
 
         if(winner) status = "Winner: " + winner;
@@ -58,6 +72,7 @@ class Game extends React.Component{
 
         return (
             <div className='game'>
+                <div className="status">{status}</div>
                 <div className='game-board'>
                     <Board 
                         squares={current.squares}
@@ -65,8 +80,10 @@ class Game extends React.Component{
                     />
                 </div>
                 <div className="game-info">
-                    <div>{status}</div> 
-                    <ol>{moves}</ol>
+                    <h1 className="toLeft">O:</h1>
+                    <ol className='toRigth'>{moves1}</ol>
+                    <h1 className="toRigth">X:</h1>
+                    <ol className="toLeft">{moves2}</ol>
                 </div>
             </div>
         )

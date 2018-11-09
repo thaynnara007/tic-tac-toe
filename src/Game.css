@@ -1,0 +1,32 @@
+/*.game {
+    display: flex;
+    flex-direction: row;
+}*/
+
+.font{
+    font-size: 30px;
+    
+}
+
+.status{
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 3px 3px midnightblue;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    background: cornflowerblue;
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+.toRigth{
+    float: right;
+}
+ 
+.toLeft{
+    float: left;
+}
